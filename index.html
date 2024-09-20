@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation in JS</title>
+</head>
+<body>
+    <header>
+        <h1>Validations in JS</h1>
+    </header>
+    <hr>
+    <main>
+        <section id="a1">
+            <h1>Form Validation</h1>
+            <form onsubmit="validateForm()" name="myform">
+                <label>name:</label> 
+                <input type="text" name="fName">
+                <input type="submit" value="submit">
+            </form>
+            <p id="msg"></p>
+        </section>
+        <hr>
+        <section id="a2">
+            <h1>Validation using API</h1>
+            <p>Enter a number and then click submit</p>
+            <input type="number" name="num" id="numy" min="100" max="300" required>
+            <button onclick="submit()">submit</button>
+            <p>If the number is less than 100 or greater than 300 there will be a surprise</p>
+            <p id="result"></p>
+        </section>
+        <hr>
+        <script src="script.js"></script>
+    </main>
+</body>
+</html>
